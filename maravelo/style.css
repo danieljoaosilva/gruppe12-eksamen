@@ -1,0 +1,683 @@
+/*LOADING SIDE*/
+#loader-wrapper { /* det her er baggrunden for loading skærmen */
+    width: 100%;
+    height: 100%;
+    z-index: 999999; /*z-index med en høj værdi bliver stacket over elementer med en mindre værdi*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#262726;
+    padding: 0;
+}
+
+.loader { /* dette er ikonet for loading skærmen */
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-image: url(img/diverse/maravelo-loading.png); /*logoet der drejer rundt*/
+    top: calc(48vh);
+    left: calc(48vw);
+    animation: loader 2s infinite ease;
+}
+
+@keyframes loader { /* de her keyframes bestemmer hvordan og hvornår loader-ikonet skal roteres */
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(360deg);}
+    50% { transform: rotate(360deg);}
+    75% { transform: rotate(720deg);}
+    100% { transform: rotate(720deg);}
+}
+
+html {
+    scroll-behavior: smooth; /*scrolling har en blødere overgang*/
+  }
+
+/*NAV BAR*/
+.maravelo-logo {
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 222px;
+    height: 44px;
+}
+
+#maravelo_nav {
+    background-color: #ffffff;
+}
+
+.navbar-nav {
+    margin-right: 35px;
+    font-size: 15px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    
+}
+
+.dropdown-item {
+    font-size: 12px;
+    font-family: helvetica, sans-serif;
+    font-weight: 200;
+    
+}
+
+.navbar-nav li a {
+    color: #262726;
+}
+
+.nav-item {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    transition: ease-in-out 0.2s;
+    opacity: 60%;
+}
+
+/*INDEX-SIDE*/
+#forside {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Koden fra linje 86 til 108 har vi lavet med hjælp fra en Youtube-video(https://youtu.be/Xy3GlrddZFI). Videoen har lært os hvordan man bruger HTML og CSS til at lave en videobaggrund på sin hjemmesideside uden at skulle linke videoen fra Youtube.*/ 
+#forside_video{
+    height: 100vh;
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+}
+ 
+.fullscreen-video-wrap{
+    position: static;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+  
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#forside_heading {
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-family: helvetica;
+}
+
+.h1-overskrift {
+    font-size: 45px;
+    font-weight: 700;
+    color: #262726;
+}
+
+.h2-underoverskrift {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #262726;
+    margin-top: -4px;
+}
+
+.ridesmile-overskrift {
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.intro-tekst {
+    color: #545350;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#ridesmile_heading {
+    background-image: url(img/smil_baggrund-v1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*koden ovenfor skaber en parallax-effekt på baggrundsbilledet, hvor billedet bevæger sig med en anden hastighed ift forgrunden når man scroller*/
+    text-align: center;
+    height: 100vh;
+    color: #ffffff;
+    margin-top: 70px;
+}
+
+.row-ridesmile {
+    height: 100%
+}
+
+/*stylingen til vores CTA-knapper, både normal tilstand og hover tilstand*/
+#knap {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #171717;
+    border: 0.3px solid #171717;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+}
+
+#knap:hover {
+    transition: ease-in 0.2s;
+    background-color: #171717;
+    border: 0.3px solid #ededed;
+    color: #ededed;
+}
+
+#knap-light {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #171717;
+    color: #ededed;
+    border: 0.3px solid #ededed;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+}
+
+#knap-light:hover {
+    transition: ease-in 0.2s;
+    background-color: #ededed;
+    border: 0.3px solid #171717;
+    color: #171717;
+}
+
+#knap-rs {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #262726;
+    border: 0.3px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+}
+
+#knap-rs:hover {
+    transition: ease-in 0.2s;
+    background-color: #171717;
+    border: 0.3px solid #171717;
+    color: #ededed;
+}
+
+#knap-cykel {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #171717;
+    color: #ffffff;
+    border: 0.3px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+}
+
+#knap-cykel:hover {
+    transition: ease-in 0.2s;
+    background-color: #ffffff;
+    border: 0.3px solid #171717;
+    color: #171717;
+}
+
+#knap-cykel2 {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #171717;
+    color: #ffffff;
+    border: 0.3px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+    margin-top: 20px;
+}
+
+#knap-cykel2:hover {
+    transition: ease-in 0.2s;
+    background-color: #ffffff;
+    border: 0.3px solid #171717;
+    color: #171717;
+}
+
+
+.alt-tekst {
+    font-size: 16px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+
+/*Cykelside på forsiden*/
+#forside_cykler {
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.h2-overskrift {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    font-family: helvetica, sans-serif;
+}
+
+.cykel-h3 {
+    color: #262726;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+.cykel-tekst {
+    font-size: 16px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    color: #545350;
+    margin-top: 15px; 
+}
+
+.cykel-1, .cykel-2, .cykel-3, .cykel-4 {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+   
+}
+
+.cykel-tekst {
+    text-align: left;
+}
+
+/* her har vi lavet en transition effekt, hvor billedet af cyklen bliver scalet op, når man kører musen hen over det*/
+.cykel-img2 {
+    transition: transform 0.8s;
+}
+
+.cykel-img2:hover {
+transform: scale(1.06);
+}
+
+/*maravelo sektion  på forside*/
+#maraveloplus_info {
+    background-color: #ededed;
+    color: #262726;
+    height: 100vh;
+    padding: 0;
+    font-family: helvetica;
+    margin-top: 70px;
+}
+
+.maraveloplus-tekst {
+color: #545350;
+}
+
+.sort-app {
+    height: 80%;
+    width: 80%;
+    -webkit-filter: drop-shadow(10px 10px 10px #545350); /*vi brugte et stykke kode(https://codepen.io/aminkodaganur/pen/dMYmrg), som giver png-billeder skygge så de bliver fremhævet*/
+  filter: drop-shadow(10px 10px 10px #545350);
+}
+
+.row-info {
+    padding: 0;
+    height: 100%;
+}
+
+.plus-overskrift {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+/*kontaktformular/instagram sektion*/
+#forside_kontakt {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: helvetica;
+}
+
+.kontaktformular {
+   max-width: 760px;
+}
+
+.knap-kontaktformular {
+    margin-left: 4px;
+    margin-top: 35px;
+}
+
+.form-group {
+    padding: 5px;
+    font-weight: lighter;
+}
+
+.kontakt-overskrift {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: #262726;
+    font-family: helvetica, sans-serif;
+    margin-bottom: 34px;
+}
+
+.insta-row {
+    max-height: 1400px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/*MARAVELO+ SIDE*/
+#plusside {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-family: helvetica, sans-serif;
+}
+
+.h1-plus {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: #262726;
+}
+
+.p-maraveloplus {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #545350;
+}
+
+.app-info {
+    margin-top: 25px;
+    height: 25%;
+    width: 25%;
+}   
+
+/*Her har vi tilføjet endnu en skyggeeffekt og scale effekt - denne gang på billedet af vores app*/
+.maravelo-app {
+    height: 420px;
+    transition: transform 0.8s;
+    -webkit-filter: drop-shadow(10px 10px 10px #545350); /*vi brugte et stykke kode(https://codepen.io/aminkodaganur/pen/dMYmrg), som giver png-billeder skygge så de bliver fremhævet*/
+  filter: drop-shadow(10px 10px 10px #545350);
+}
+
+.maravelo-app:hover {
+transform: scale(1.2);
+-webkit-filter: drop-shadow(10px 10px 10px #545350 );
+  filter: drop-shadow(10px 10px 10px #545350);
+}
+
+/*RIDE&SMILE SIDE*/
+#ridesmile-banner {
+    height: 90vh;
+    background-image: url(img/smil_baggrund-v1.png); /*endnu en parallax-effekt, som vi også brugte i denne sektion på forsiden*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#ridesmile-side2 {
+    margin-top: 100px;
+}
+
+.h1-ridesmile {
+    color: #ffffff;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+.h2-ridesmile {
+    font-family: helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #262726;
+}
+
+.h2-ridesmile2 {
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.ridesmile-tekst {
+    font-family: helvetica, sans-serif;
+    color: #545350;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 24px;
+}
+
+.h3-quiz1 {
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    color: #262726;
+    font-size: 45px;
+    border-bottom: 4px solid #262726;
+    padding-bottom: 8px;
+    width: 26%;
+}
+
+/*styling af vores javascript quiz*/
+.quiz-h4 {
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 18pt;
+}
+
+.svarmuligheder {
+    margin-top: 16px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    color: #545350;
+}
+
+#ridesmile-quiz {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+/*styling af svarknappen på vores javascript quiz*/
+#svar {
+    font-size: 11px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #171717;
+    color: #ffffff;
+    border: 0.3px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.5pt;
+    
+}
+
+#svar:hover {
+    transition: ease-in 0.2s;
+    background-color: #ffffff;
+    border: 0.3px solid #171717;
+    color: #171717;
+}
+
+/*CYKEL SIDER*/
+#sporter-side, #crosser-side, #city-side, #urban-side {
+    font-family: helvetica, sans-serif;
+}
+
+.cykel-row1 {
+    background-color: #ededed;
+    height: 60vh;
+}
+
+.cykel-row2 {
+    background-color: #ededed;
+    height: 60vh;
+}
+
+/*endnu en scale effekt*/
+.cykel-img {
+    transition: transform 0.8s;
+}
+
+.cykel-img:hover {
+transform: scale(1.2);
+}
+
+.cykel-titel1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    color: #262726;
+}
+
+.info-titel1 {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: helvetica, sans-serif;
+    color: #545350;
+    border-top: 4px solid #262726;
+    padding-top: 14px;
+    width: 21%;
+}
+
+/*.cykel-titel2 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.info-titel2 {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: helvetica, sans-serif;
+    color: #ffffff;
+}*/
+
+.cykel-content {
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.cykel-undertitel {
+    margin-top: 100px;
+    color: #262726;
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.p-cykel-tekst {
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/*OM OS SIDE*/
+#aboutside {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.h1-about {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: #262726;
+}
+
+.p-about-tekst {
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #545350
+}
+
+
+/*FOOTER*/
+#footer {
+    background-color: #ededed;
+    color: #545350;
+    padding: 10px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-family: helvetica, sans-serif;
+    line-height: 18px;
+}
+
+.h5-footer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 14px;
+    padding-bottom: 30px;
+    color: #262726;
+}
+
+.p-footer {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.footer-icon {
+    font-size: 24px;
+}
+
+.footer-icon2 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    color: #545350;
+    text-decoration: none;
+}
+
+.footer-links:visited {
+    color: #545350;
+}
+
+.footer-links:hover {
+    opacity: 60%;
+    transition: ease-in-out 0.2s;
+}
+
+.p-footer-copyright {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #a5a5a5;
+    margin-top: 14px;
+}
+
+#footer2 {
+    background-color: #171717;
+    padding: 20px 0px;
+    font-family: helvetica, sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+

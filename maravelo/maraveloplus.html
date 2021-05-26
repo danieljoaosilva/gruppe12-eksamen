@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Meta-description,  hjælper på SEO-->
+    <meta name="description" content="Maravelo+ er en app udviklet af Maravelo som gør en oplevelse på vores el-cykler endnu bedre. Administrer din Maravelo elcykel direkte fra telefonen">
+    <title>Maravelo+ | Maravelo</title>
+    <!--Links til vores stylesheet, bootstrap, SoMe-ikoner(fontawesome) og font-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/869437f596.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img//diverse/maravelo-tab.png"> <!-- Lille maravelo-ikon i fanebladet -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg" id="maravelo_nav">  <!-- Vi brugte Bootstrap til at opsætte skelettet af vores navbar, og så har vi designet den efter vores behov-->
+    <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="maravelo-logo" src="img/diverse/logo-black.png" alt="maravelo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="rideandsmile.html">RIDE&SMILE</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CYKLER</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="sporter.html">SPORTER</a></li>
+                    <li><a class="dropdown-item" href="crosser.html">CROSSER</a></li>
+                    <li><a class="dropdown-item" href="city.html">CITY</a></li>
+                    <li><a class="dropdown-item" href="urban.html">URBAN</a></li>
+                </ul>
+                </li>
+                
+            <li class="nav-item">
+                <a class="nav-link" href="maraveloplus.html">MARAVELO+</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">OM OS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#forside_kontakt">KONTAKT</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- info om maravelo+ app-->
+<div class="container-fluid" id="plusside">
+    <div class="row align-items-center justify-content-evenly">
+        <div class="col-md-4">
+            <h1 class="h1-plus">MARAVELO+</h1>
+            <p class="p-maraveloplus">Med Maravelo+ app'en forbedres din oplevelse på vejen. Maravelo+ giver alle kunder sikkerheden og overblikket over bl.a. ruter, cyklens placering samt muligheden for låsning og oplåsning af din Maravelo el-cykel. Maravelo+ har et simpelt og brugervenligt display, som gør det nemt for alle kunder at tjekke på deres Maravelo el-cykel. Maravelo+ app'en giver bl.a. mulighed for at tilkoble din Digital Smart Helmet. </p>
+            <p class="p-maraveloplus">Med Maravelo+ app'en kan du dele din lokation og ruter med dine Maravelo Buddies eller også på dine sociale medier. Appen indeholder også en betalingsoversigt så du kan holde overblik over din Ride&Smile leasing. Maravelo+ kan tilkobles til dit Apple Smart Watch, her har du muligheden for at tracke din sundhedsudvikling, når du cykler på din Maravelo.</p>
+            <p class="p-maraveloplus">Maravelo+ app'en kan downloades på både App Store og Google Play.</p>
+            <img class="img-fluid app-info" src="img/diverse/app-info.png" alt="Tilgængelig i google play store og app store">
+        </div>
+        <div class="col-md-4">
+            <img class="maravelo-app" src="img/diverse/sort-app-display2.png" alt="maravelo+ app">
+        </div>
+    </div>
+</div>
+
+<!--Vores footer med links til resten af siden, SoMe og kontaktinformation-->
+<footer class="container-fluid" id="footer">
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <h5 class="h5-footer">UDFORSK</h5>
+            <a class="footer-links" href="index.html#forside"><p class="p-footer footer-links">Forside</p></a>
+            <a class="footer-links" href="rideandsmile.html"><p class="p-footer footer-links">Ride&Smile</p></a>
+            <a class="footer-links" href="index.html#forside_cykler"><p class="p-footer footer-links">Cykler</p></a>
+            <a class="footer-links" href="maraveloplus.html"><p class="p-footer footer-links">Maravelo+</p></a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5 class="h5-footer">FØLG OS</h5>
+            <a class="footer-links" target="_blank" href="https://www.instagram.com/maravelobikes/"><p class="p-footer footer-links"><i class="footer-icon fab fa-instagram"></i> /maravelobikes</p></a>
+            <a class="footer-links" target="_blank" href="https://www.facebook.com/mymaravelo"><p class="p-footer footer-links"><i class="footer-icon fab fa-facebook-square"></i> /mymaravelo</p></a>
+            <a class="footer-links" target="_blank" href="https://www.linkedin.com/company/maravelo/"><p class="p-footer footer-links"><i class="footer-icon fab fa-linkedin"></i> /maravelo</p></a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5 class="h5-footer">KONTAKT</h5>
+            <p class="p-footer"><i class="footer-icon2 fas fa-phone"></i> +45 60 94 60 95</p>
+            <p class="p-footer"><i class=" footer-icon2 fas fa-envelope"></i> maravelo@maravelo.eu</p>
+            <p class="p-footer"><i class="footer-icon2 fas fa-map-marker-alt"></i> Bakkegårdsvej 106, 3050 Humlebæk</p>
+        </div>
+      
+    </div>
+</footer>
+<footer class="container-fluid" id="footer2">
+        <p class="p-footer-copyright">&copy; 2021 Maravelo | Eksamensprojekt udarbejdet af Gruppe 12 MulA</p>
+</footer>    
+   <!--link til bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  <!-- vi har linket til et jquery-bibliotek, som gør det nemmere at anvende JavaScript, ved bl.a. at lave kode-forkortelser -->      
+</body>
+</html>

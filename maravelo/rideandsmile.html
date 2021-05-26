@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Meta-description,  hjælper på SEO-->
+    <meta name="description" content="Ride&Smile er Maravelos leasing af kvalitets el-cykler. Med Ride&Smile kan du lease en el-cykel hos Maravelo uden binding">
+    <title>Ride&Smile | Maravelo</title>
+    <!--Links til vores stylesheet, bootstrap, SoMe-ikoner(fontawesome) og font-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/869437f596.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img//diverse/maravelo-tab.png"> <!-- Lille maravelo-ikon i fanebladet -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg" id="maravelo_nav">  <!-- Vi brugte Bootstrap til at opsætte skelettet af vores navbar, og så har vi designet den efter vores behov-->
+    <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="maravelo-logo" src="img/diverse/logo-black.png" alt="maravelo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="rideandsmile.html">RIDE&SMILE</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CYKLER</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="sporter.html">SPORTER</a></li>
+                    <li><a class="dropdown-item" href="crosser.html">CROSSER</a></li>
+                    <li><a class="dropdown-item" href="city.html">CITY</a></li>
+                    <li><a class="dropdown-item" href="urban.html">URBAN</a></li>
+                  </ul>
+                </li>
+                
+            <li class="nav-item">
+                <a class="nav-link" href="maraveloplus.html">MARAVELO+</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">OM OS</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#forside_kontakt">KONTAKT</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- banner-forside til vores ride&smile side-->
+<div class="container-fluid" id="ridesmile-banner">
+    <div class="row align-items-center justify-content-center row-ridesmile">
+        
+            <h1 class="h1-ridesmile">RIDE&SMILE</h1>
+   
+    </div>
+</div>
+
+<!--Info om leasing + billedkarrusel der forklarer processen-->
+<div class="container-fluid" id="ridesmile-side">
+  <div class="row align-items-center justify-content-evenly">
+      <div class="col-md-4">
+        <h2 class="h2-ridesmile">RIDE&SMILE</h2>
+        <h3 class="h2-ridesmile2">LEASE EN EL-CYKEL</h2>
+        <p class="ridesmile-tekst">Maravelo tilbyder kædefrie, prestige el-cykler, som vækker cykelglæden i os alle. Det italienske design, den avancerede teknologi og komfort der er uovertruffet sætter den nye standard på gaden. Vi synes alle skal have mulighed for at opleve en Maravelo el-cykel - derfor har vi lanceret Ride&Smile. Ride&Smile leasing giver dig adgang til en ægte italiensk cykel, som tager dig til og fra skole, studie og arbejde uden problemer – alt dette til prisen for et togkort. </p>
+        <p class="ridesmile-tekst">Der er et oprettelsesgebyr på 899kr, når man melder sig til Ride&Smile. Man kender sine omkostninger fra start til slut. El-cyklen leases uden binding med alt inklusiv for under 1000kr/md om måneden.</p>
+        <a href="index.html#forside_cykler"><button type="button" id="knap-cykel">SE CYKLER</button></a>
+    </div>
+
+    <!--Billedkarrusellen er fra bootstrap, hvor vi selv har tilføjet infobilleder ind i karrusellen.-->
+
+    <!-- her har vi knapperne til de forskellige slides, vi har 10 billeder og derfor 10 slides-->
+      <div class="col-md-4"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+
+        <!-- her har vi indsat billederne -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/ridesmile-forklaret/rs1.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs2.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs3.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs4.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs5.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs6.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs7.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs8.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs9.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ridesmile-forklaret/rs10.png" class="d-block w-100" alt="Ride&Smile leasing aftale">
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--info om student leasing-->
+<div class="container-fluid" id="ridesmile-side2">
+  <div class="row align-items-center justify-content-evenly">
+
+    <div class="col-md-4">
+        <img class="img-fluid" src="img/2cyklersammen.jpg" alt="maravelo ride&smile lease en el-cykel">
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="h2-ridesmile">RIDE&SMILE</h2>
+      <h2 class="h2-ridesmile2">STUDENT LEASING</h2>
+      <p class="ridesmile-tekst">Ride&Smile tilbyder en ny og speciel student-leasing aftale, hvor forældrene fungerer som medsponsor. El-cyklen leases med Ride&Smile uden binding for under 1000kr/md inklusiv en serviceaftale og tilbagekøbsgaranti. Forældrene bidrager kontant med et aftalt beløb, og den studerende finansierer et månedligt restbeløb på eksempelvis 449kr. På den måde sparer den studerende penge på ungdomskort. Når man vil stoppe Ride&Smile aftalen køber Maravelo cyklen retur til en garanteret kurs, ellers kan den overtages af forældrene.</p>
+  </div>
+
+</div>
+</div>
+
+
+
+<!-- quiz sektionen, vores quiz-js javascript bruger .quiz-h4 classen til at displaye spørgsmålet og svarmuligheder classen til at displaye svarmulighederne fra javascriptet-->
+<div class="container-fluid" id="ridesmile-quiz">
+    <div class="row align-items-center justify-content-evenly">
+  
+        <div class="col-md-4">
+            <h3 class="h3-quiz1">QUIZ</h3>
+           <h4 class="quiz-h4"></h4>
+
+      <div class="svarmuligheder"></div>
+        </div>
+
+        <div class=col-md-4><img class="img-fluid" src="img/cykelcloseup.jpg" alt="maravelo el-cykel closeup Sporter Gen II"></div>  
+
+    </div>
+</div>
+  
+
+<!--Vores footer med links til resten af siden, SoMe og kontaktinformation-->
+<footer class="container-fluid" id="footer">
+  <div class="row justify-content-center">
+      <div class="col-md-2">
+          <h5 class="h5-footer">UDFORSK</h5>
+          <a class="footer-links" href="index.html#forside"><p class="p-footer footer-links">Forside</p></a>
+          <a class="footer-links" href="rideandsmile.html"><p class="p-footer footer-links">Ride&Smile</p></a>
+          <a class="footer-links" href="index.html#forside_cykler"><p class="p-footer footer-links">Cykler</p></a>
+          <a class="footer-links" href="maraveloplus.html"><p class="p-footer footer-links">Maravelo+</p></a>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+          <h5 class="h5-footer">FØLG OS</h5>
+          <a class="footer-links" target="_blank" href="https://www.instagram.com/maravelobikes/"><p class="p-footer footer-links"><i class="footer-icon fab fa-instagram"></i> /maravelobikes</p></a>
+          <a class="footer-links" target="_blank" href="https://www.facebook.com/mymaravelo"><p class="p-footer footer-links"><i class="footer-icon fab fa-facebook-square"></i> /mymaravelo</p></a>
+          <a class="footer-links" target="_blank" href="https://www.linkedin.com/company/maravelo/"><p class="p-footer footer-links"><i class="footer-icon fab fa-linkedin"></i> /maravelo</p></a>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+          <h5 class="h5-footer">KONTAKT</h5>
+          <p class="p-footer"><i class="footer-icon2 fas fa-phone"></i> +45 60 94 60 95</p>
+          <p class="p-footer"><i class=" footer-icon2 fas fa-envelope"></i> maravelo@maravelo.eu</p>
+          <p class="p-footer"><i class="footer-icon2 fas fa-map-marker-alt"></i> Bakkegårdsvej 106, 3050 Humlebæk</p>
+      </div>
+    
+  </div>
+</footer>
+<footer class="container-fluid" id="footer2">
+        <p class="p-footer-copyright">&copy; 2021 Maravelo | Eksamensprojekt udarbejdet af Gruppe 12 MulA</p>
+</footer>    
+
+    <!--link til bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>  <!-- link til vores quiz-javascript // multiple-choice quiz lært i undervisningen i flow 4-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  <!-- vi har linket til et jquery-bibliotek, som gør det nemmere at anvende JavaScript, ved bl.a. at lave kode-forkortelser -->          
+</body>
+</html>

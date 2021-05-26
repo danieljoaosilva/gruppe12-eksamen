@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta-description,  hjælper på SEO-->
+    <meta name="description" content="Maravelo er forhandler af ægte italienske el-cykler. Lease en Maravelo el-cykel med Ride&Smile for under 1000kr om måneden!">
+    <title>Maravelo - Italienske el-cykler i verdensklasse </title>
+    <!--Links til vores stylesheet, bootstrap, SoMe-ikoner(fontawesome) og font-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/869437f596.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img//diverse/maravelo-tab.png"> <!-- Lille maravelo-ikon i fanebladet -->
+</head>
+<body>
+
+<!--https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=RedStapler - https://www.youtube.com/watch?v=oOGCRMJoJwQ-->
+<!-- Vi brugte disse to videoer inspiration til vores loading screen, CSS-koden kan ses i style.css linje 1 til 29 -->
+<div class="container-fluid" id="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<!-- Vi brugte Bootstrap til at opsætte skelettet af vores navbar, og så har vi designet den efter vores behov-->
+<nav class="navbar navbar-expand-lg" id="maravelo_nav"> 
+    <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="maravelo-logo" src="img/diverse/logo-black.png" alt="maravelo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="rideandsmile.html">RIDE&SMILE</a>
+            </li>
+            <!--dropdown-punkt ("CYKLER") i vores navbar-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CYKLER</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="sporter.html">SPORTER</a></li>
+                  <li><a class="dropdown-item" href="crosser.html">CROSSER</a></li>
+                  <li><a class="dropdown-item" href="city.html">CITY</a></li>
+                  <li><a class="dropdown-item" href="urban.html">URBAN</a></li>
+                </ul>
+                </li>
+                
+            <li class="nav-item">
+                <a class="nav-link" href="maraveloplus.html">MARAVELO+</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">OM OS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#forside_kontakt">KONTAKT</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<div class="container-fluid" id="forside">
+    <!--Koden fra linje X til X har vi lavet med hjælp fra en Youtube-video(https://youtu.be/Xy3GlrddZFI). Videoen har lært os hvordan man bruger HTML og CSS til at lave en videobaggrund på sin hjemmesideside uden at skulle linke videoen fra Youtube.-->
+    <div class="container-fluid" id="forside_video"> 
+        <div class="fullscreen-video-wrap">
+              <video autoplay muted loop src="video/finalvideo.mp4"></video> <!--her bliver vores video automatisk afspillet, den er lydløs og looper-->
+        </div>
+    </div>
+    <!--Introduktion af Maravelo-->
+    <div class="container-fluid" id="forside_heading"> <!--hele bootstraps kolonne/grid-system bruger containere og rows til at layoute siden man bygger. Her bliver der brugt flexbox, hvilket gør alt content responsivt-->
+        <div class="row align-items-center justify-content-evenly"> <!-- centrerer tekst på y- og x-aksen -->
+            <div class="col-md-5"> <!-- denne class er bootstrap, inddeler diverne ind i kolonner, denne kolonne fylder fx 5 ud af 12 i kolonne-grid'et-->
+                <img src="img/sporter-mennesker2.png" alt="maravelo sporter elcykel" class="img-fluid"> <!--img-fluid er en bootstrap class som gør billederne responsive-->
+            </div>
+            <div class="col-md-5">
+                <h1 class="h1-overskrift">MARAVELO</h1>
+                <h2 class="h2-underoverskrift">HYBRID BICYCLE CLUB</h2>
+                <br>
+                <p class="intro-tekst">Hos Maravelo gør vi os stolte i at producere el-cykler på italiensk vis. Her vægter vi komfort, kvalitet og klasse i vores produkter. Vi tilbyder smukke italienske designs, avanceret teknologier og service på et helt nyt niveau. Som kunde hos Maravelo er du altid godt stillet, da vi tilbyder dig en unik leasingaftale, Ride&Smile, der giver dig mulighed for at eje en prestige el-cykel til en billig pris. Med Ride&Smile kan du lease en ægte el-cykel til den samme pris som et togkort.</p>
+            </div> 
+        </div>
+    </div>
+
+    <!--Ride&Smile introduktion-->
+    <div class="container-fluid" id="ridesmile_heading">
+        <div class="row align-items-center justify-content-center row-ridesmile">
+            <div class="col-md-4">
+                <h2 class="ridesmile-overskrift">RIDE&SMILE</h2>
+                <p class="alt-tekst">Ride&Smile - Det behøver ikke være dyrt at køre med stil. Med Maravelos Ride&Smile-leasing får du mulighed for at lease en ægte italiensk el-cykel til prisen af et ungdomskort.</p>
+                <a href="rideandsmile.html"><button type="button" id="knap-rs">LÆS MERE</button></a> <!--CTA-knapper-->
+            </div>
+        </div>
+    </div>
+
+    <!--Præsentation af Maravelo-cykler-->
+    <div class="container-fluid" id="forside_cykler">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+                <h2 class="h2-overskrift">VORES EL-CYKLER</h2>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-evenly row-cykler">
+            <div class="col-md-3">
+                <div class="cykel-1">
+                    <h3 class="cykel-h3">SPORTER</h3>
+                    <a href="sporter.html"><img src="img/cykler/sporter.png" alt="maravelo sporter el-cykel " class="img-fluid cykel-img2"></a>
+                    <p class="cykel-tekst">
+                        Sporter Gen II er vores hurtige el-cykel, som er er beregnet til den sporty type. Kan nemt nå op på 35km/t.
+                    </p>
+                    <a href="sporter.html"><button type="button" id="knap-cykel">SE CYKEL</button></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="cykel-2">
+                    <h3 class="cykel-h3">CROSSER</h3>
+                    <a href="crosser.html"><img src="img/cykler/crosser.png" alt="maravelo crosser el-cykel " class="img-fluid cykel-img2"></a>
+                    <p class="cykel-tekst">
+                        Crosser Gen II kan klare alt fra pendling gennem byen til ture i skoven. Har en rækkevidde på op til 100km.
+                    </p>
+                    <a href="crosser.html"><button type="button" id="knap-cykel">SE CYKEL</button></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="cykel-3">
+                    <h3 class="cykel-h3">CITY</h3>
+                    <a href="city.html"><img src="img/cykler/city.png" alt="maravelo city el-cykel " class="img-fluid cykel-img2"></a>
+                    <p class="cykel-tekst">
+                        City Gen II er designet med mindre stel, lavere indstigning og er perfekt til personer mellem 150cm og 175cm.
+                    </p>
+                    <a href="city.html"><button type="button" id="knap-cykel">SE CYKEL</button></a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="cykel-4">
+                    <h3 class="cykel-h3">URBAN</h3>
+                    <a href="urban.html"><img src="img/cykler/urban.png" alt="maravelo urban el-cykel" class="img-fluid cykel-img2"></a>
+                    <p class="cykel-tekst">
+                        Urban Gen II er perfekt til cykelture gennem byen med dets smagfulde design og stilrene display.
+                    </p>
+                    <a href="urban.html"><button type="button" id="knap-cykel">SE CYKEL</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Maravelo+ app introduktion-->
+    <div class="container-fluid" id="maraveloplus_info">
+        <div class="row align-items-center row-info">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+            <h2 class="plus-overskrift">FORBIND DIN MARAVELO TIL MARAVELO+</h2>
+            <p class="alt-tekst maraveloplus-tekst">Få det meste ud af din Maravelo el-cykel med Maravelo+. Forbind din el-cykel med app’en for altid at have et overblik – direkte fra din mobil. App’en tilbyder funktioner, som gør din oplevelse med vores cykler endnu bedre. </p>
+            <a href="maraveloplus.html"><button type="button" id="knap-light">LÆS MERE</button></a>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <img src="img/diverse/sort-app-display2.png" alt="maravelo+ app" class="img-fluid sort-app">
+            </div>
+        </div>
+    </div>
+
+    <!--Kontaktformular // Instagram embed til vores Maravelo-instagram-->
+    <div class="container-fluid" id="forside_kontakt">
+        <div class="row align-items-center justify-content-evenly insta-row">
+            <div class="col-md-5">
+                <h2 class="kontakt-overskrift">
+                    KONTAKT OS
+                </h2>
+            <form class="kontaktformular"> <!--kontaktformularens dele er bygget med bootstrap, og vi har indrettet den efter vores behov-->
+                <div class="form-group">
+                    <label class="exampleFormControlInputName2" for="exampleFormControlInputName2">Navn:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInputName2"> <!--input til navn-->
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"> <!--input til mail-->
+                </div>
+                <div class="form-group">
+                    <label for="example-tel-input">Mobil:</label>
+                    <input class="form-control" type="tel" id="example-tel-input"> <!--input til nummer-->
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Din besked:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea> <!--tektsområde til besked-->
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Accepter privatlivspolitik
+                      </label>
+                    </div>
+                </div>
+                <button type="submit" class="knap-kontaktformular" id="knap-cykel">SEND</button> <!--send-->
+            </form>
+            </div>
+            <div class="col-md-5 instafeed">
+                <!-- her har vi brugt instagrams egen funktion(samme stil som YouTube), hvor man kan embedde et opslag fra sin instagram til sin HTML-side-->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CPBQm3En6iP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CPBQm3En6iP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Vis dette opslag på Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CPBQm3En6iP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Et opslag delt af MARAVELO BIKES (@maravelobikes)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<!--Vores footer med links til resten af siden, SoMe og kontaktinformation-->
+<footer class="container-fluid" id="footer">
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <h5 class="h5-footer">UDFORSK</h5>
+            <a class="footer-links" href="index.html#forside"><p class="p-footer footer-links">Forside</p></a>
+            <a class="footer-links" href="rideandsmile.html"><p class="p-footer footer-links">Ride&Smile</p></a>
+            <a class="footer-links" href="index.html#forside_cykler"><p class="p-footer footer-links">Cykler</p></a>
+            <a class="footer-links" href="maraveloplus.html"><p class="p-footer footer-links">Maravelo+</p></a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5 class="h5-footer">FØLG OS</h5>
+            <a class="footer-links" target="_blank" href="https://www.instagram.com/maravelobikes/"><p class="p-footer footer-links"><i class="footer-icon fab fa-instagram"></i> /maravelobikes</p></a>
+            <a class="footer-links" target="_blank" href="https://www.facebook.com/mymaravelo"><p class="p-footer footer-links"><i class="footer-icon fab fa-facebook-square"></i> /mymaravelo</p></a>
+            <a class="footer-links" target="_blank" href="https://www.linkedin.com/company/maravelo/"><p class="p-footer footer-links"><i class="footer-icon fab fa-linkedin"></i> /maravelo</p></a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h5 class="h5-footer">KONTAKT</h5>
+            <p class="p-footer"><i class="footer-icon2 fas fa-phone"></i> +45 60 94 60 95</p>
+            <p class="p-footer"><i class=" footer-icon2 fas fa-envelope"></i> maravelo@maravelo.eu</p>
+            <p class="p-footer"><i class="footer-icon2 fas fa-map-marker-alt"></i> Bakkegårdsvej 106, 3050 Humlebæk</p>
+        </div>
+      
+    </div>
+</footer>
+<!--Footer med copyright-->
+<footer class="container-fluid" id="footer2">
+        <p class="p-footer-copyright">&copy; 2021 Maravelo | Eksamensprojekt udarbejdet af Gruppe 12 MulA</p>
+</footer>
+
+
+
+    <!--link til bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="source.js"></script> <!--link til selve javascript-koden der står for loading-skærmen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  <!-- vi har linket til et jquery-bibliotek, som gør det nemmere at anvende JavaScript, ved bl.a. at lave kode-forkortelser - her har vi brugt det til at lave loading-skærmen -->  
+</body>
+</html>
